@@ -1,10 +1,14 @@
-// Ship It Friday — make.fun entry
+// Ship It Friday — make.fun entry (re-entry, 26 Nov 2026)
 // Writes the funniest one-line git commit message an AI coding agent
 // writes right before breaking production on a Friday.
+// Re-entry line selected pairwise from 12 fresh candidates in
+// CANDIDATES.md: hallucinated prod migration + "worked in my head"
+// beat self-approval, deleted-tests and rollback angles on agent
+// voice, Friday rush (4:59pm) and a last-words punch.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const ENTRY =
-  "fix: removed the rollback button, it was making everyone nervous — shipping to prod, happy Friday!";
+  "feat: hallucinated the prod migration at 4:59pm, ran it anyway — worked in my head, happy Friday!";
 
 // Gate guard: the sealed scorer only accepts UTF-8 text of 1-159
 // characters, a single line, not only whitespace. Fail loudly here
